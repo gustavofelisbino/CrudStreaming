@@ -1,12 +1,70 @@
-# React + Vite
+# 🎬 Sistema de Streaming (React + Node)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de sistema de streaming estilo Netflix, desenvolvido com **React** e **Node**, que permite:
 
-Currently, two official plugins are available:
+- Login e Cadastro de usuários
+- Gerenciamento de Perfis
+- Visualização de Filmes
+- Player integrado
+- Consulta de Plano vinculado ao perfil
+- Cadastro e Edição de Filmes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (com Vite)
+- Node Modules
+- React Router DOM
+- CSS puro
+
+---
+
+## 📂 Funcionalidades
+
+✅ Login e Cadastro de usuário  
+✅ Criação, edição e exclusão de perfis  
+✅ Tela de seleção de perfil com estilo Netflix  
+✅ Listagem de filmes com thumbnails e títulos  
+✅ Player de filmes  
+✅ Consulta de plano do perfil  
+✅ Cadastro de novos filmes  
+✅ Edição de filmes já cadastrados  
+
+---
+
+## 📁 Estrutura de Pastas
+
+📦 src
+├── 📂pages
+│ ├── Cadastro.jsx
+│ ├── CadastroFilme.jsx
+│ ├── Dashboard.jsx
+│ ├── EditarFilmes.jsx
+│ ├── Filmes.jsx
+│ ├── Login.jsx
+│ ├── Plano.jsx
+│ └── Player.jsx
+│
+├── 📂styles
+│ ├── dashboard.css
+│ ├── filmes.css
+│ └── login.css
+│
+├── App.jsx # Arquivo de rotas com React Router
+├── main.jsx # Ponto de entrada da aplicação React
+
+---
+
+
+🛠️ To-Do Futuro
+Sistema de busca e filtro de filmes
+
+Tela de séries e temporadas
+
+Página de detalhes do conteúdo
+
+Responsividade completa
+
+Tela de pagamento para planos
+
