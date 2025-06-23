@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../firebase';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import '../styles/login.css';
 
 export default function Login() {
@@ -17,6 +17,17 @@ export default function Login() {
       navigate("/dashboard");
     } catch (err) {
       alert("Erro no login: " + err.message);
+    }
+  };
+
+  const handleCadastro = async () => {
+    try {
+      const cred = await createUserWithEmailAndPassword(auth, email, senha);
+      localStorage.setItem("usuarioLogadoId", cred.user.uid);
+      alert("Usuário cadastrado com sucesso!");
+      navigate("/dashboard");
+    } catch (err) {
+      alert("Erro no cadastro: " + err.message);
     }
   };
 
@@ -41,6 +52,12 @@ export default function Login() {
           />
           <button type="submit">Entrar</button>
         </form>
+
+        <hr style={{ margin: "20px 0", borderColor: "#333" }} />
+
+        <button onClick={handleCadastro} className="cadastro-button">
+          Cadastrar Novo Usuário
+        </button>
       </div>
     </div>
   );

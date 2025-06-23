@@ -57,3 +57,16 @@ body, html {
     background-color: #b20710;
   }
   
+  .cadastro-button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cadastro-button:hover {
+  background-color: #777;
+}
